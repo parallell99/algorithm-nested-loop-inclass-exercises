@@ -8,6 +8,19 @@
 
 // Start coding here
 
+const showStudentsData = (studentInfo) =>{
+ let result = ''
+  for (let item of studentInfo){
+    console.log(item);
+    
+    for (let key in item){
+      result += `${key}: ${item[key]}\n`
+    }
+    result += ' -------------------\n'
+  }
+  return result
+}
+
 const studentsInfo = [
   { name: "Alice", age: 14, classNumber: 8, favoriteSubject: "Math" },
   { name: "Charlie", age: 15, classNumber: 9, favoriteSubject: "History" },
